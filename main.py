@@ -36,6 +36,6 @@ zerotime_normalized = normalize(zerotime_list)
 # The image was flipped for some reason so we flip it back
 flipped = np.flip(zerotime_normalized, 0)
 
+# Create an image from the 2D array
 img = Image.fromarray(np.uint8(flipped*255))
-
 img.show()
